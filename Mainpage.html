@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>코로나야</title>
+    <meta charset="utf-8">
+    <link rel = "stylesheet" href="main.css">
+    <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=7b5d92c0ab57055a0548cf95e50d24a6&appkey=ad2bd1dcb7e3948bf4f7ad416b1e3c4f
+			&libraries=clusterer,services"></script>
+</head>
+
+
+<body>
+    <header>
+        <div>
+            <h2>코로나야</h2>
+        </div>
+    </header>
+
+    <ul>
+        <li><a class="home" href="#">홈</a></li><br>
+        <li><a href="#">국내지도 현황판</a></li><br>
+        <li><a href="#">현재현황그래프</a></li><br>
+        <li><a href="주변확진자.html">내주변 확진자</a></li><br>
+        <li><a href="#">코로나 알기</a></li><br>
+        
+    </ul>
+    
+    <br> <br> <br> <br>
+    <section style="height: 5%;">
+        <div style= "margin-left: 25%" >
+            <div class="Statusboard">
+                첫번째 영역
+            </div>
+            <div class="Statusboard">
+                두번째 영역
+            </div>
+            <div class="Statusboard">
+                세번째 영역
+            </div>
+            <div class="Statusboard">
+                네번째 영역
+            </div>
+            <div class="Statusboard">
+                다섯번째 영역
+            </div>
+        </div>
+    </section>
+    <br>
+    <section>
+        <img id="map" src="./pngwing.com.png" usemap="#map">
+        <map name="map">
+            <!-- 서울 -->
+            <area shape="poly" coords="123,13,147,37,157,60,155,74,159,88,166,87,171,72,177,80,185,88,190,92,201,96,204,96,213,97,222,97,241,99,244,92,244,91,205,34,202,16,193,9,191,0,190" href="https://www.naver.com" target="blank">
+            <!-- 경기 -->
+            <area shape="poly" coords="" href="" target="blank">
+            <!-- 인천 -->
+            <area shape="poly" coords="" href="" target="blank">
+
+            <!-- 강원도 -->
+            <area shape="poly" coords="" href="" target="blank">
+
+            <!-- 경상북도 -->
+            <area shape="poly" coords="" href="" target="blank">
+            <!-- 대구 -->
+            <area shape="poly" coords="" href="" target="blank">
+
+            <!-- 경상남도 -->
+            <area shape="poly" coords="" href="" target="blank">
+            <!-- 울산 -->
+            <area shape="poly" coords="" href="" target="blank">
+            <!-- 부산 -->
+            <area shape="poly" coords="" href="" target="blank">
+
+            <!-- 충청북도 -->
+            <area shape="poly" coords="" href="" target="blank">
+
+            <!-- 청청남도 -->
+            <area shape="poly" coords="" href="" target="blank">
+            <!-- 대전 -->
+            <area shape="poly" coords="" href="" target="blank">
+
+            <!-- 전라북도 -->
+            <area shape="poly" coords="" href="" target="blank">
+
+            <!-- 전라남도 -->
+            <area shape="poly" coords="" href="" target="blank">
+            <!-- 광주 -->
+            <area shape="poly" coords="" href="" target="blank">
+
+            <!— 제주도 —>
+                <area shape="poly" coords="" href="" target="blank">
+        </map>
+    </section>
+
+    
+    <section>
+        <div style="width:500px; float: left; margin-left: 10%;">
+            <canvas id="myChart1"></canvas>
+        </div>
+        <div style="width:500px; float: left; margin-left: 10%;">
+            <canvas id="myChart2"></canvas>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <script src="chart1.js"></script>
+    </section>
+    
+</body>
+
+
+</html>
